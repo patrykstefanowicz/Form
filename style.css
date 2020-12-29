@@ -17,8 +17,7 @@ html {
   min-height: 100vh;
 }
 
-
-.form__item{
-    display: block;
-    width: 100%;
+.form__item {
+  display: block;
+  width: 100%;
 }
