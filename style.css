@@ -1,12 +1,24 @@
-html{
-    box-sizing: border-box;
-  }
-  
-  *,*:before, *:after {
-    box-sizing: inherit;
-  }
+html {
+  box-sizing: border-box;
+}
 
-  
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.body {
+  background: rgb(110, 23, 192);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
 
-  
+.form__item{
+    display: block;
+    width: 100%;
+}
