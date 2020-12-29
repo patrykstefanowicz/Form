@@ -10,13 +10,12 @@
   <body class="body">
     <main>
       <h1>Form</h1>
-      <form class="form">
+      <form action="https://dev.cotenfrontend.pl" method="post" class="form">
         <p>
           <label for="firstName">Your name:</label>
           <input
             class="form__item"
             type="text"
-            value="Patryk"
             placeholder="Please enter your name"
             id="firstName"
             name="firstName"
@@ -29,7 +28,6 @@
             <input
               class="form__item"
               type="text"
-              value="Stefanowicz"
               placeholder="Please enter your last name"
               id="lastName"
               name="lastName"
@@ -89,6 +87,24 @@
         </p>
 
         <p>
+          <label for="Model">Pick one model:</label>
+          <select name="model" id="model">
+            <option value="none"></option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes-benz">Mercedes-benz</option>
+            <option value="Honda">Honda</option>
+            <option value="Volvo">Volvo</option>
+          </select>
+        </p>
+
+        <p>
+          <label
+            >File:
+            <input class="form__item" type="file" id="file" name="file" />
+          </label>
+        </p>
+
+        <p>
           <label
             >How happy you are?
             <input
@@ -126,6 +142,17 @@
               />
             </label>
           </p>
+
+          <p>
+            <label
+              >Postal Code:
+              <input
+                class="form__item"
+                name="postalCode"
+                pattern="[0-9]{2}-[0-9]{3}"
+              />
+            </label>
+          </p>
         </fieldset>
 
         <fieldset>
@@ -148,7 +175,7 @@
                 id="iceCream"
                 name="iceCream"
                 value="vanillia"
-              />Vanillia
+              />Vanilla
             </label>
           </p>
 
@@ -162,8 +189,18 @@
               />Strawberry
             </label>
           </p>
-          
         </fieldset>
+
+        <p>
+          <label for="yourStory">Your story: </label>
+          <textarea
+            class="form__item"
+            id="yourStory"
+            name="yourStory"
+            id="yourStory"
+            placeholder="My story is..."
+          ></textarea>
+        </p>
 
         <p>
           <label>
@@ -176,6 +213,10 @@
             <input type="checkbox" name="agreement" value="notagree" />I don't
             agree
           </label>
+        </p>
+
+        <p>
+          <input type="submit" value="Send" />
         </p>
       </form>
     </main>
